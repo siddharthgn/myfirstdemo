@@ -19,8 +19,8 @@ resource "aws_vpc" "example" {
 }
 
 resource "aws_instance" "example" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  ami           = ami-01a00762f46d584a1
+  instance_type = "t2.micro"
 
   tags = {
     Name = "HelloWorld"
