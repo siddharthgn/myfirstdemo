@@ -18,11 +18,9 @@ resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 }
 
-resource "aws_instance" "example" {
-  ami           = ami-01a00762f46d584a1
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "HelloWorld"
-  }
+resource "aws_instance" "this" {
+  ami                     = "ami-01a00762f46d584a1"
+  instance_type           = "t2.micro"
+  
 }
+
